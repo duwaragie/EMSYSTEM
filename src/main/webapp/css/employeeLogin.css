@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alert {
+    background-color: #98BDFF; /* Light Blue */
+    color: #000; /* Black text */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.login-container {
+    background-color: white;
+}
+
+.login-container h1 {
+    color: #4B49AC;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #7DA0FA;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 40px;
+    border: 2px solid #98BDFF;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #7DA0FA;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4B49AC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #7DA0FA;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #7978E9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #F3797E;
+    text-decoration: underline;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #F3797E;
+}
+
+.signup-link a {
+    color: #F3797E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #7DA0FA;
+    text-decoration: underline;
+}
+
+/* Logo Icon */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container i {
+    font-size: 60px;
+    color: #4B49AC;
+    transition: transform 0.3s ease;
+}
+
+.logo-container i:hover {
+    transform: rotate(360deg);
+}
+
+/* Animation on page load */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-wrapper {
+    animation: slideIn 0.8s ease-in-out;
+}

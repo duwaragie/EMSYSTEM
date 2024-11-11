@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #4B49AC; /* Dark blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; /* Add space between search bar and role-select */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 250px; /* Adjust width as needed */
+    font-size: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    border: none;
+    background-color: #4B49AC; /* Dark blue */
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #7978E9; /* Purplish blue on hover */
+}
+
+/* Styled Role Select Dropdown */
+.dropdown-container {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dropdown {
+    padding: 8px;
+    border: 2px solid #4B49AC; /* Dark blue border */
+    border-radius: 5px;
+    background-color: #98BDFF; /* Light blue background */
+    color: #333;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #7978E9; /* Purplish blue focus */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../image/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h2 {
+	color: black;
+    font-size: 3em;
+}
+.hero-content p{
+	color: black;
+}
+
+.cta-button {
+    background-color: #F3797E; /* Light pink for call-to-action button */
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF6B6B;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.features-section h3 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: #4B49AC; /* Dark blue icon */
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonials-section h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 45%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4B49AC; /* Dark blue */
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background: linear-gradient(45deg, #4B49AC, #98BDFF, #7DA0FA, #7978E9, #F3797E); /* Gradient background */
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.call-to-action h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    background-color: #F3797E; /* Light pink */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #FF6B6B;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4B49AC; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+    

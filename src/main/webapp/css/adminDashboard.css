@@ -1,0 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard p {
+	color: #fff;
+}
+
+h2 {
+    color: #4B49AC;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3, ul {
+    color: #4B49AC;
+}
+
+/* Recent Activity */
+.recent-activity ul {
+    background-color: #4B49AC;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    list-style-type: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity ul li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.recent-activity ul li:last-child {
+    border-bottom: none;
+}
+
+.recent-activity ul li:hover {
+    background-color: #7DA0FA;
+    transition: background-color 0.3s ease;
+}
+
+/* Stats Section */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: #98BDFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.stat-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Charts Section */
+.charts {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.chart-box {
+    flex: 1;
+    text-align: center;
+    background-color: #7DA0FA;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; /* To ensure image scaling is smooth */
+}
+
+.chart-box img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chart-box:hover img {
+    transform: scale(1.2); /* Scales the image to 120% */
+}
+
+/* Quick Actions Section */
+.quick-actions {
+    text-align: center;
+}
+
+.quick-actions .action-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #7978E9;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.quick-actions .action-btn:hover {
+    background-color: #4B49AC;
+}
+
+/* Announcements Section */
+.announcements {
+    margin-top: 30px;
+}
+
+.announcement-box {
+    background-color: #F3797E;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.announcement-box h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.announcement-box p {
+    font-size: 14px;
+}
+
+/* Icons Styling */
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.stat-box i {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,193 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+	background-image: url('${pageContext.request.contextPath}/image/bg.jpg') no-repeat center center fixed; /* Background Image */
+    background-size: cover; /* Cover the whole page */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(75, 73, 172, 0.8); /* Semi-transparent dark blue */
+    position: relative;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #4B49AC;
+}
+
+.navbar ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+
+/* Header Title Styles */
+.header-title {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Container for GIF and Form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Adjust for header height */
+    padding: 10px;
+}
+
+/* GIF Section */
+.gif-container {
+    flex: 1; /* Take 50% width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.login-gif {
+    max-width: 100%;  /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit height */
+}
+
+/* Form Container */
+.form-container {
+    flex: 1; /* Take 50% width */
+    max-width: 400px;
+    margin: 0 40px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+/* Logo Icon */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container i {
+    font-size: 60px;
+    color: #4B49AC;
+    transition: transform 0.3s ease;
+}
+
+.logo-container i:hover {
+    transform: rotate(360deg);
+}
+
+/* Form Elements */
+.form {
+    padding: 20px;
+}
+
+/* Input Field Styles */
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input:required{
+	border: 2px solid rgb(255, 0, 0);
+}
+ 
+form input:required:focus{
+	outline: none;
+	border: 2px solid #007bff;
+}
+
+.input-icon {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 8px;
+    color: #4B49AC;
+}
+
+#heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4B49AC;
+}
+
+/* Button Styles */
+.button1, .button2, .button3 {
+    width: 45%;
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    color: white;
+    background-color: #4B49AC;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+    background-color: #7978E9;
+}
+
+.button2 {
+    background-color: #7DA0FA;
+}
+
+.button3 {
+    background-color: #F3797E;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}

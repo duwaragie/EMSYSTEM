@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+
+/* Header Styling */
+.header {
+    background-color: #252525;
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 3px solid #171717;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+    color: white;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    margin-top: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #d3d3d3;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .header-title {
+        font-size: 1.5em;
+    }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  height: 70vh;            /* Full viewport height */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 300px;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #98BDFF;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #4B49AC;
+  box-shadow: inset 2px 5px 10px #7DA0FA;
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #fff;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #7978E9 ;
+  color: white;
+}
+
+.button1:hover {
+  background-color: #7DA0FA ;
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #7978E9 ;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #7DA0FA ;
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #7978E9 ;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: 7DA0FA ;
+}
+/* Footer Styling */
+.footer {
+    width: 100%;
+    position: fixed; /* Makes sure the footer stays at the bottom */
+    bottom: 0;
+    left: 0;
+    text-align: center; /* Centers the text */
+    padding: 1em;
+    background-color: #252525; /* Dark background */
+    opacity: 0.8; /* Less transparent effect */
+    color: white; /* White text */
+    font-size: 0.8em; /* Smaller font size */
+    font-family: Arial, sans-serif; /* Font styling */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow at the top for separation */
+}
+
+/* Ensures the footer stays fixed but doesn't overlap content */
+body {
+    margin-bottom: 50px; /* Enough space for the footer */
+}

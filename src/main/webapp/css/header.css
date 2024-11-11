@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* Header styling */
+header {
+    background-color: #4B49AC;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Header top section with logo and username */
+/* Styling for h1 with a link */
+h1 a {
+    color: white; /* Make the text white to blend with the header */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 28px; /* Adjust font size for a professional look */
+    font-weight: 700; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition effect on hover */
+    display: inline-block;
+}
+
+/* Hover effect for the link */
+h1 a:hover {
+    color: #C0C0C0; /* Lighten the color on hover */
+}
+
+/* Adjust spacing for h1 */
+h1 {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, professional font */
+    padding: 10px 0;
+}
+
+/* Ensure the header layout remains intact with flexbox */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+/* User info styling (right side username) */
+.user-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: #D3D3D3;
+}
+
+ .logout-button {
+    display: none; /* Initially hide the logout button */
+    position: absolute; /* Position it relative to the user-info */
+    top: 6.9%; /* Below the username */
+    right: 35px; /* Align to the right */
+    margin-top: 0; /* Add some space */
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: #7978E9;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Show logout button when hovering over username */
+.user-info:hover .logout-button {
+    display: block; /* Show the logout button */
+        }
+.logout-button:hover {
+	background-color: red; /* Change background color on hover */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* Distribute items evenly with space between */
+    background-color: #7978E9;
+    padding: 2px;
+    border-radius: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly; /* This will ensure the list items are evenly spaced */
+    width: 100%;
+}
+
+.navbar ul li {
+    flex: 1; /* Each item takes up equal width */
+    text-align: center;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #7DA0FA;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #5E63E9;
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+}

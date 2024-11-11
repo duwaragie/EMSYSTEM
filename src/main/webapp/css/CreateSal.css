@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+  
+}
+
+header {
+    background-color: white;
+    color: #4B49AC;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+.logo {
+    height: 40px; /* Set a fixed height for the logo container */
+    display: flex; /* Align items vertically */
+    align-items: center; /* Center logo vertically */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.logo img {
+    height: 100%; /* Set height to 100% to fit the container */
+    width: auto; /* Maintain aspect ratio */
+    max-height: 40px; /* Ensure the image does not exceed the height of the container */
+    transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+/* Hover effect for logo */
+.logo:hover img {
+    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+}
+
+
+/* Title styling */
+h1 a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4B49AC; /* Ensure title color matches header text */
+}
+
+/* Profile section */
+.profile {
+    position: relative;
+    margin-left: auto; /* Align profile to the right */
+    cursor: pointer;
+    color: #4B49AC;
+}
+
+.profile p {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Dropdown content */
+.profile:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none; /* Initially hidden */
+    background-color: red;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Sidebar styles */
+.container {
+    display: flex;
+    /* width: 100%; */
+}
+
+.sidebar {
+    width: 248px;
+    background-color: #4B49AC; 
+    padding: 20px;
+    height: 115vh;
+    border-radius: 0px 6px 0px 0px;
+} 
+
+.sidebar-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-header h2 {
+    color: #3f3f3f;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #98BDFF;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+}
+/* Form container styles */
+.form-container {
+	margin-top: 50px;
+    background-color: #4B49AC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Adjust width as needed */
+    margin-left: 300px;
+    height: 100vh; /* Space between sidebar and form */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Read-only input style */
+input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #98BDFF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Ensure button text is readable */
+}
+
+button:hover {
+    background-color: #0056b3; /* Adjusted to be more consistent */
+}
+
+/* Required input styles */
+input:required {
+    border: 2px solid red;
+}
+
+input:required:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}

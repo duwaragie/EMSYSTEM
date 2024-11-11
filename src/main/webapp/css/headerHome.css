@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* General Header Styling */
+.header {
+    background-color: #4B49AC; /* Dark blue */
+    padding: 15px 40px; /* Padding for the header */
+    display: flex;
+    justify-content: space-between; /* Space between logo and right-align content */
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and title container */
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the logo size */
+.logo {
+    height: 100px; /* Adjust logo height as needed */
+    width: auto;
+    margin-right: 15px; /* Space between logo and title */
+}
+
+.header-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navbar styling */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #7978E9; /* Hover with purplish blue */
+}
+
+/* Right Align Section: Search Bar and Role Select */
+.right-align {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between search bar and role select */
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    font-size: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    border: none;
+    background-color: #4B49AC; /* Dark blue */
+    color: white;
+    border-radius: 0px 25px 25px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #7978E9; /* Hover with purplish blue */
+}
+
+/* Styled Role Select Dropdown */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+.role-label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.dropdown {
+    padding: 8px;
+    border: 2px solid #4B49AC;
+    border-radius: 5px;
+    background-color: #98BDFF;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #7978E9; /* Focus effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .right-align {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .dropdown-container {
+        margin-top: 10px;
+    }
+}

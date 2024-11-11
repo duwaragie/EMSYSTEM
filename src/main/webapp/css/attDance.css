@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+  
+}
+
+header {
+    background-color: white;
+    color: #4B49AC;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure header spans full width */
+}
+
+h1 a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.profile {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #4B49AC;
+}
+
+.profile p {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+}
+
+.profile:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    /* top: 18px; */
+    background-color: red;
+    /* min-width: 100px; */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Sidebar styles */
+.container {
+    display: flex;
+    /* width: 100%; */
+}
+
+.sidebar {
+    width: 248px;
+    background-color: #4B49AC; 
+    padding: 20px;
+    height: 78vh;
+    border-radius: 0px 6px 0px 0px;
+} 
+
+.sidebar-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-header h2 {
+    color: #3f3f3f;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #98BDFF;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Table styles */
+.table-container {
+	display: justify;
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling for wide tables */
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for table container */
+}
+
+table {
+	/* display: flex; */
+    width: 95%;
+    border-collapse: separate; /* Allows for rounded corners */
+    border-spacing: 0; /* No space between cells */
+    margin: 20px 30px 30px 20px ;
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the rounded corners show */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a modern look */
+}
+
+th, td {
+    padding: 12px 10px; /* Increased padding for more space */
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    align-items: center;
+}
+
+th {
+    background-color: #7DA0FA;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px; /* Slightly larger font for headers */
+    white-space: nowrap;
+    padding: 16px; /* Increased padding for more space in header */
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 15px; /* Slightly increased font size for content */
+    color: #333;
+    padding: 16px; /* Increased padding for table cells */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Removes the border for the last row */
+}
+
+tr:hover td {
+    background-color: white; /* Subtle highlight on hover */
+}
+

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #4B49AC;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container i {
+    font-size: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container i:hover {
+    transform: rotate(360deg);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #7978E9;
+    transform: translateX(5px);
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+header h2 {
+    font-size: 32px;
+    color: #4B49AC;
+    margin-bottom: 30px;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #98BDFF;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card i {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}

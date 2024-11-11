@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EmployeeManagment</display-name>
+  
+  <welcome-file-list>
+  <welcome-file>home.jsp</welcome-file>
+  <welcome-file>info.jsp</welcome-file>
+  <welcome-file>department.jsp</welcome-file>
+  </welcome-file-list>
+  
+<error-page>
+	<error-code>404</error-code>
+	<location>/404.jsp</location>
+</error-page>
+  
+  <servlet>
+  <servlet-name>dash</servlet-name>
+  <servlet-class>com.employee.DashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>dash</servlet-name>
+  <url-pattern>/dash</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.employee.PayrollLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>createsalary</servlet-name>
+		<servlet-class>com.employee.createSalary</servlet-class>
+	</servlet>
+	<servlet-mapping> 
+		<servlet-name>createsalary</servlet-name>
+		<url-pattern>/ins</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+	<servlet-name>upRec</servlet-name>
+	<servlet-class>com.employee.UpdatePayRecordServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>upRec</servlet-name>
+	<url-pattern>/Upd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>read</servlet-name>
+	<servlet-class>com.employee.ReadPayRecordServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>read</servlet-name>
+	<url-pattern>/rd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>deRec</servlet-name>
+	<servlet-class>com.employee.DeletePayRecordServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>deRec</servlet-name>
+	<url-pattern>/Delete</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+  <servlet-name>addemp</servlet-name>
+  <servlet-class>com.employee.AddEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addemp</servlet-name>
+  <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+<servlet>
+    <servlet-name>UpdateEmployeeServlet</servlet-name>
+    <servlet-class>com.employee.UpdateEmployeeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateEmployeeServlet</servlet-name>
+    <url-pattern>/Update</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ReadEmployeeServlet</servlet-name>
+    <servlet-class>com.employee.ReadEmployeeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ReadEmployeeServlet</servlet-name>
+    <url-pattern>/Read</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>DeleteEmployeeServlet</servlet-name>
+<servlet-class>com.employee.DeleteEmployeeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteEmployeeServlet</servlet-name>
+<url-pattern>/del</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>validate</servlet-name>
+<servlet-class>com.employee.employeeLoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>validate</servlet-name>
+<url-pattern>/val</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+        <servlet-name>HRLogin</servlet-name>
+        <servlet-class>main.hr.HRLoginServlet</servlet-class>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HRLogin</servlet-name>
+        <url-pattern>/hrLogin</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 	<servlet>
+        <servlet-name>insertEmpStatus</servlet-name>
+        <servlet-class>main.hr.InsertEmpStatusServlet</servlet-class>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertEmpStatus</servlet-name>
+        <url-pattern>/hrinsert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <servlet-class>main.hr.UpdateEmpStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <url-pattern>/hrupdate</url-pattern>
+    </servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>EmployeeView</servlet-name>
+        <servlet-class>main.hr.EmployeeViewServlet</servlet-class>  
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeView</servlet-name>
+        <url-pattern>/ReadStat</url-pattern>
+    </servlet-mapping>
+      
+       <servlet>
+        <servlet-name>EmployeeDelete</servlet-name>
+        <servlet-class>main.hr.DeleteEmpStatus</servlet-class>  <!-- Corrected class name -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeDelete</servlet-name>
+        <url-pattern>/hrdelete</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+        <servlet-name>ITSupportStaffLogin</servlet-name>
+        <servlet-class>IT_Support_Staff.loginItServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ITSupportStaffLogin</servlet-name>
+        <url-pattern>/itsupportstafflogin</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>ITSupportStaff</servlet-name>
+        <servlet-class>IT_Support_Staff.ITSupportStaffInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ITSupportStaff</servlet-name>
+        <url-pattern>/ITinsert</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+        <servlet-name>upDate</servlet-name>
+        <servlet-class>IT_Support_Staff.UpdateServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>upDate</servlet-name>
+        <url-pattern>/ITUpdate</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+        <servlet-name>ReadS</servlet-name>
+        <servlet-class>IT_Support_Staff.ReadServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>ReadS</servlet-name>
+        <url-pattern>/ITread</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>DeleteS</servlet-name>
+        <servlet-class>IT_Support_Staff.DeleteSevlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>DeleteS</servlet-name>
+        <url-pattern>/DelTicket</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

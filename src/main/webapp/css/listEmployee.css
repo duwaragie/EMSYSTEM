@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff; /* Light background for contrast */
+    color: #333; /* Text color */
+}
+
+h2 {
+    text-align: center;
+    color: #4B49AC; /* Dark blue */
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4B49AC; /* Dark blue */
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid #7DA0FA; /* Supporting blue */
+}
+
+td {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light alternating row color */
+}
+
+tr:hover {
+    background-color: #F3797E; /* Light pink hover effect */
+    color: white;
+}
+
+table input[type="text"], 
+table input[type="email"], 
+table input[type="date"], 
+table input[type="password"] {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table input[type="text"]:focus, 
+table input[type="email"]:focus, 
+table input[type="date"]:focus, 
+table input[type="password"]:focus {
+    border: 1px solid #4B49AC; /* Dark blue border on focus */
+    outline: none;
+}
+
+/* Update button styling */
+form input[type="button"] {
+    background-color: #7978E9; /* Purplish blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+form input[type="button"]:hover {
+    background-color: #4B49AC; /* Dark blue on hover */
+}
+
+.alert {
+    background-color: #98BDFF; /* Light Blue */
+    color: #000; /* Black text */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #e0e0e0;
+    }
+}
